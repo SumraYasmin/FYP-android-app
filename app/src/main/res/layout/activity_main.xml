@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="#ffff"
+    tools:context="com.example.ayesha.fyp.MainActivity"
+    android:weightSum="1"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_width="222dp"
+        android:layout_height="78dp"
+        android:src="@drawable/aid_first"
+        android:layout_marginBottom="40dp"/>
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/edittext_border"
+        android:ems="10"
+        android:id="@+id/email"
+
+        android:hint="@string/email"
+        android:textColorHint="#28b463"
+        android:textColor="#17202A"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_weight="0.12" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_border"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:textColor="#17202A"
+        android:textColorHint="#28b463"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:id="@+id/password"
+        android:hint="@string/password"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="0.11" />
+    <Button
+        android:id="@+id/login"
+        android:background="#28b463"
+        style="?android:textAppearanceSmall"
+        android:textColor="#ffff"
+        android:layout_width="239dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/login_activity"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:elevation="3dp" />
+
+    <TextView
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="50dp"
+        android:layout_width="319dp"
+        android:layout_height="wrap_content"
+        android:textColor="#28b463"
+        android:id="@+id/signup"
+        android:text="@string/login_text"
+        android:textSize="17sp"
+        android:layout_weight="0.09" />
+
+    <TextView
+        android:layout_width="351dp"
+        android:paddingTop="10dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/Message"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="15sp"
+        android:textAlignment="center" />
+</LinearLayout>

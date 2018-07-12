@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffff"
+    android:weightSum="1"
+    tools:context="com.example.ayesha.fyp.UpdateProcedure">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text=""
+        android:textColor="#17202A"
+        android:textColorHint="#28b463"
+        android:id="@+id/title_profile"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:textStyle="normal|bold"
+        android:textSize="38sp"
+        android:textAlignment="center"
+        android:fontFamily="serif" />
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:background="@drawable/edittext_border"
+        android:ems="10"
+        android:id="@+id/proc_name"
+        android:hint="Procedure Name"
+        android:textColor="#17202A"
+        android:textColorHint="#28b463"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+
+        android:layout_marginBottom="30dp"
+        android:layout_width="match_parent"
+        android:layout_weight="0.09"/>
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:background="@drawable/edittext_border"
+        android:ems="10"
+        android:id="@+id/proc_level"
+        android:hint="Level"
+        android:textColor="#17202A"
+        android:textColorHint="#28b463"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_weight="0.09"/>
+
+
+    <Button
+        android:id="@+id/update_procedure"
+        android:background="#28b463"
+        style="?android:textAppearanceSmall"
+        android:textColor="#ffff"
+        android:layout_width="239dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="8dp"
+        android:text="Update"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:elevation="3dp" />
+</LinearLayout>

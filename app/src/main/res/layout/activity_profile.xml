@@ -1,0 +1,170 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffff"
+    android:weightSum="1"
+    tools:context="com.example.ayesha.fyp.Profile">
+
+
+
+    <TextView
+        android:layout_width="139dp"
+        android:layout_height="wrap_content"
+        android:text="Update Picture"
+        android:id="@+id/upload_picture"
+        android:textColor="#28b463"
+        android:textStyle="normal|bold"
+        android:textSize="18sp"
+        android:clickable="true"
+        android:onClick="UploadPicture"
+        android:layout_alignBaseline="@+id/edit_profile"
+        android:layout_alignBottom="@+id/edit_profile"
+        android:layout_toRightOf="@+id/edit_profile"
+        android:layout_marginLeft="55dp"
+        android:layout_marginStart="55dp" />
+
+    <!--<Button
+        android:id="@+id/Task"
+
+        android:background="#325eff"
+        style="?android:textAppearanceSmall"
+        android:textColor="#ffff"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="8dp"
+        android:text="AssignedTask"
+        android:textStyle="bold"
+        android:elevation="3dp" /> !-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Profile"
+        android:textColor="#28b463"
+        android:id="@+id/edit_profile"
+        android:drawableRight="@android:drawable/ic_menu_edit"
+        android:drawableTint="@color/colorPrimary"
+        android:paddingLeft="35dp"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:textAllCaps="false"
+        android:clickable="true"
+        android:onClick="EditProfile"
+        android:layout_below="@+id/title_profile"
+        android:layout_alignStart="@+id/title_profile" />
+
+    <ImageView
+        android:layout_width="145dp"
+        android:layout_height="145dp"
+        android:src="@drawable/dp"
+        android:id="@+id/profile_picture"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:text=""
+        android:textColor="#D11919"
+        android:id="@+id/title_profile"
+        android:layout_marginLeft="8dp"
+        android:textStyle="normal|bold"
+        android:textSize="34sp"
+        android:textAlignment="center"
+        android:fontFamily="serif"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/profile_picture"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Assigned Tasks"
+        android:textColor="#28b463"
+        android:id="@+id/view_assigned_tasks"
+        android:drawableTint="@color/colorPrimary"
+        android:paddingLeft="35dp"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:textAllCaps="false"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="10dp"
+        android:clickable="true"
+        android:onClick="ViewAssignedProcedure"
+        android:layout_below="@+id/edit_profile"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Learn Assigned Procedure"
+        android:visibility="gone"
+        android:textColor="#28b463"
+        android:id="@+id/learn_assignd_procedure"
+        android:drawableTint="@color/colorPrimary"
+        android:paddingLeft="35dp"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:textAllCaps="false"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/view_assigned_tasks"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Practice Assigned Procedure"
+        android:visibility="gone"
+        android:textColor="#28b463"
+        android:id="@+id/practice_assigned_procedure"
+        android:drawableTint="@color/colorPrimary"
+        android:paddingLeft="35dp"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:layout_marginBottom="10dp"
+        android:textAllCaps="false"
+        android:clickable="true"
+        android:layout_below="@+id/learn_assignd_procedure"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Training History"
+        android:textColor="#28b463"
+        android:id="@+id/view_training_history"
+        android:drawableTint="@color/colorPrimary"
+        android:paddingLeft="35dp"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:textAllCaps="false"
+        android:layout_marginBottom="10dp"
+        android:clickable="true"
+        android:onClick="ViewTrainingHistory"
+        android:layout_below="@+id/practice_assigned_procedure"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Practice History"
+        android:textColor="#28b463"
+        android:id="@+id/view_practice_history"
+        android:drawableTint="@color/colorPrimary"
+        android:paddingLeft="35dp"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:textAllCaps="false"
+        android:clickable="true"
+        android:layout_marginBottom="10dp"
+        android:onClick="ViewPracticeHistory"
+        android:layout_below="@+id/view_training_history"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

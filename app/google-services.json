@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "271506002288",
+    "firebase_url": "https://final-year-project-105d0.firebaseio.com",
+    "project_id": "final-year-project-105d0",
+    "storage_bucket": "final-year-project-105d0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:271506002288:android:8ea758e292cb400c",
+        "android_client_info": {
+          "package_name": "com.example.ayesha.fyp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "271506002288-vs3e3e0a0q7t8mqoug1sae10bhhra4f1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfvnxxgMPSYSGz6YyplRFTSzNd_s9b1bU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

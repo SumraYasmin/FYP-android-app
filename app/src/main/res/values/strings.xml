@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Train Up</string>
+    <string name="login_activity">Login</string>
+    <string name="Signup_activity">Signup</string>
+    <string name="profile">Profile</string>
+
+    <string name="logout">logout</string>
+    <string name="empty"></string>
+
+    <string name="login_text">No account yet? Create one</string>
+    <string name="signup_text">Already a member? Login</string>
+    <string name="settings">Settings</string>
+    <string name="change_password">Change Password</string>
+    <string name="name">Name</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="create_account">Create Account</string>
+
+    <string name="edit_profile">Edit Profile</string>
+    <string name="warning_offline">You are currently offline</string>
+    <string name="warning_validation">Email or password is incorrect</string>
+    <string name="feedback_signup">Account created successfully</string>
+    <string name="warning_permission">You dont have permission to access file location!</string>
+    <string name="trainer_email_error">Cannot create account with this email!</string>
+    <string name="search_trainees">Search..</string>
+
+</resources>

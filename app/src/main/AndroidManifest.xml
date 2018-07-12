@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.ayesha.fyp">
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE"
+        android:required="true" />
+    <uses-permission
+        android:name="android.permission.CHANGE_WIFI_STATE"
+        android:required="true" />
+    <uses-permission
+        android:name="android.permission.CHANGE_NETWORK_STATE"
+        android:required="true" />
+    <uses-permission
+        android:name="android.permission.INTERNET"
+        android:required="true" />
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE"
+        android:required="true" />
+    <uses-permission android:required="true" android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:required="true" android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:required="true" android:name="android.permission.STORAGE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        tools:replace="android:icon,android:theme"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Register"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/Signup_activity">
+            <intent-filter>
+                <action android:name="com.example.ayesha.fyp.Register" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Profile"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/profile">
+            >
+            <intent-filter>
+                <action android:name="com.example.ayesha.fyp.Profile" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LearnAssignedProcedure"
+            android:configChanges="orientation|screenSize"
+            android:label="Learn Assigned Procedures">
+
+            <intent-filter>
+                <action android:name="com.example.ayesha.fyp.LearnAssignedProcedure" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".EditProfile"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/edit_profile">
+            >
+            <intent-filter>
+                <action android:name="com.example.ayesha.fyp.EditProfile" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ChangePassword"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/change_password">
+            >
+            <intent-filter>
+                <action android:name="com.example.ayesha.fyp.ChangePassword" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ViewAssignedTasks"
+            android:configChanges="orientation|screenSize"
+            android:label="View Assigned Tasks">
+            >
+            <intent-filter>
+                <action android:name="com.example.ayesha.fyp.ViewAssignedTasks" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ViewTrainingHistory"
+            android:configChanges="orientation|screenSize"
+            android:label="View Training History">
+            >
+            <intent-filter>
+                <action android:name="com.example.ayesha.fyp.ViewTrainingHistory" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ViewPracticeHistory"
+            android:configChanges="orientation|screenSize"
+            android:label="View Practice History">
+            >
+            <intent-filter>
+                <action android:name="com.example.ayesha.fyp.ViewPracticeHistory" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".TrainerProfile"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/profile">
+            <intent-filter>
+                <action android:name="com.example.ayesha.fyp.TrainerProfile" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ViewTrainees"
+            android:configChanges="orientation|screenSize"
+            android:label="View Trainees">
+            <intent-filter>
+                <action android:name="com.example.ayesha.fyp.ViewTrainees" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".PreviewTrainee"
+            android:configChanges="orientation|screenSize"
+            android:label="Trainee">
+            <intent-filter>
+                <action android:name="com.example.ayesha.fyp.PreviewTrainee" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".AddScore"
+            android:configChanges="orientation|screenSize"
+            android:label="Add Score">
+            <intent-filter>
+                <action android:name="com.example.ayesha.fyp.AddScore" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".ViewProcedures"
+            android:configChanges="orientation|screenSize"
+            android:label="First Aid Techniques">
+            <intent-filter>
+                <action android:name="com.example.ayesha.fyp.ViewProcedures" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".UpdateProcedure"
+            android:configChanges="orientation|screenSize"
+            android:label="Update Procedure">
+            <intent-filter>
+                <action android:name="com.example.ayesha.fyp.UpdateProcedure" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ApproveNewTechniques"
+            android:configChanges="orientation|screenSize"
+            android:label="Approve New Techniques">
+
+            <intent-filter>
+                <action android:name="com.example.ayesha.fyp.ApproveNewTechniques" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+
+        <service android:name=".NotificationUtils$NotificationActionService" />
+    </application>
+
+</manifest>
